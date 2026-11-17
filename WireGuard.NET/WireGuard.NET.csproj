@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <!-- Open-source library: emit XML API documentation alongside the assembly -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <!-- NuGet 包元数据：包 ID 与程序集名可以不同，WireGuard.Net 已被他人占用 -->
+    <PackageId>VirtuaMesh.WireGuard.NET</PackageId>
+    <Authors>VirtuaMesh</Authors>
+    <Description>Pure .NET WireGuard implementation: Noise_IKpsk2 handshake, ChaCha20-Poly1305 transport, replay protection and cross-platform TUN devices (Wintun, Linux tun, macOS utun).</Description>
+    <PackageTags>wireguard;vpn;noise;tun;networking;security</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+    <PackageProjectUrl>https://www.virtuamesh.com/</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+    <PackageReference Include="BouncyCastle.Cryptography" Version="2.6.2" />
+  </ItemGroup>
+
+</Project>

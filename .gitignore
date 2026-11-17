@@ -1,0 +1,21 @@
+# 构建输出
+[Bb]in/
+[Oo]bj/
+artifacts/
+
+# IDE 与本地配置
+.vs/
+.idea/
+*.user
+*.suo
+*.DotSettings.user
+
+# 测试与覆盖率
+TestResults/
+*.trx
+coverage*.xml
+coverage*.json
+
+# NuGet 包
+*.nupkg
+*.snupkg
